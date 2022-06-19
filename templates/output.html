@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container py-3">
+    <h1>Gasto Calórico<br class="d-md-none"> Médio Diário<br><span class="red">{{tdee}} kcal</span></h1>
+
+
+    <div class="container center_div">
+        <div class="col-sm-md-10 mx-auto">
+
+            <div class="container">
+                <div class="form-group row">
+
+                    <div class="col-sm-6">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="{{ url_for('static', filename='images/metabolismo.jpg') }}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Taxa Metabólica Basal</h5>
+                                <h3 class="card-text">{{bmr}} kcal</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="{{ url_for('static', filename='images/digestao.jpg') }}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Digestão de Alimentos</h5>
+                                <h3 class="card-text">{{tef}} kcal</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="{{ url_for('static', filename='images/exercicio.jpg') }}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Exercícios Físicos</h5>
+                                <h3 class="card-text">{{eat}} kcal</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="{{ url_for('static', filename='images/atividade.jpg') }}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Atividades Cotidianas</h5>
+                                <h3 class="card-text">{{neat}} kcal</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row my-4">
+
+                <div class="col-sm-12">
+                    <h1>Ingestão Diária<br class="d-md-none"> Recomendada<br><span class="red">{{calorias_dieta}} kcal</span></h1>
+                    <h5>Para {{dias_para_objetivo}}</span></h3>
+                </div>
+
+            </div>
+
+            <div class="container mb-3">
+                <div class="form-group row">
+                    
+                    <div class="col-sm-4">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="{{ url_for('static', filename='images/proteinas.jpg') }}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Proteínas</h5>
+                                <h3 class="card-text">{{proteinas_dieta}} g/dia</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="{{ url_for('static', filename='images/carboidratos.jpg') }}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Carboidratos</h5>
+                                <h3 class="card-text">{{carboidratos_dieta}} g/dia</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="{{ url_for('static', filename='images/gorduras.jpg') }}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Gorduras</h5>
+                                <h3 class="card-text">{{gorduras_dieta}} g/dia</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,93 @@
+/* geral */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    border: none;
+}
+
+.red {
+    color:#DC4448
+}
+
+.grey {
+    color:#A29C9C
+}
+
+body {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.center_div{
+    margin: 0 auto;
+    width: 66.66%;
+}
+
+.form-select, .form-control {
+    margin-bottom: 6.66%;
+}
+
+.card {
+    border: none;
+}
+.card-img-top {
+    height: 95px;
+    width: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 3.33%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    text-align: center;
+}
+
+select, option, input {
+    text-align: center;
+    font-size: 125%;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 3%;
+    font-size: 125%;
+}
+
+/* specifics */
+
+input[type="submit"], button {
+    width: 100%;
+    height: 3rem;
+    margin-top: 3.33%;
+    margin-bottom: 3.33%;
+    float: right;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #DC4448;
+    transition: .1s;
+}
+
+#github-btn {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1rem;
+}
